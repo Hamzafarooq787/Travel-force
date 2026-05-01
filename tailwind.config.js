@@ -6,7 +6,20 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#fbbf24",        // warm yellow
+        "primary-dark": "#f59e0b",
+        secondary: "#38bdf8",
+        accent: "#4ade80",
+        dark: "#1f2937",
+        "gray-light": "#f9fafb",
+        "gray-dark": "#6b7280",
+      },
+      fontFamily: {
+        sans: ["Inter", "system-ui", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };

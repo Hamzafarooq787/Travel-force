@@ -1,22 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* =========================
-   🌞 THEME (Soft Travel UI)
-========================= */
-@theme {
-  --color-primary: #fcd34d;
-  --color-primary-dark: #fbbf24;
-  --color-secondary: #38bdf8;
-  --color-accent: #4ade80;
-
-  --color-dark: #1f2937;
-  --color-gray-light: #f9fafb;
-  --color-gray: #e5e7eb;
-  --color-gray-dark: #6b7280;
-
-  --font-sans: "Inter", system-ui, sans-serif;
-}
 
 /* =========================
    🧱 BASE TYPOGRAPHY
@@ -46,7 +30,6 @@
 /* =========================
    🎯 UI COMPONENTS
 ========================= */
-
 .btn-primary {
   @apply bg-primary text-black px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg font-medium 
          hover:bg-primary-dark transition-all duration-300;
@@ -58,19 +41,14 @@
 }
 
 /* =========================
-   🎞️ SLIDER FIX (IMPORTANT UPGRADE)
+   🎞️ SLIDER FIX
 ========================= */
-
-/* spacing FIX (compact) */
 .hero-below-slider-inner .slick-slide {
   margin: 0 4px !important;
 }
 
-/* dots FIX (too much gap remove) */
 .hero-below-slider-inner .slick-dots {
   bottom: -12px !important;
-  margin: 0;
-  padding: 0;
 }
 
 .hero-below-slider-inner .slick-dots li {
@@ -84,85 +62,31 @@
 }
 
 .hero-below-slider-inner .slick-dots li.slick-active button:before {
-  color: var(--color-primary-dark);
+  color: #f59e0b;
 }
 
-/* arrows FIX (smaller + cleaner) */
+/* arrows */
 .slick-prev:before,
 .slick-next:before {
   content: "";
   background-image: url("https://travelforce.co.uk/wp-content/uploads/2025/05/Arrow-Left.svg");
   background-size: contain;
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   display: block;
 }
 
-/* hero arrows positioning */
-.hero-below-slider-inner .slick-prev {
-  left: -6px;
-  z-index: 10;
-}
-
-.hero-below-slider-inner .slick-next {
-  right: -6px;
-}
-
-/* =========================
-   📱 MOBILE OPTIMIZATION
-========================= */
+/* mobile */
 @media (max-width: 768px) {
-  .hero-below-slider-inner .slick-slide {
-    margin: 0 2px !important;
-  }
-
   .slick-prev:before,
   .slick-next:before {
-    width: 20px;
-    height: 20px;
-  }
-
-  .hero-below-slider-inner .slick-prev {
-    left: -3px;
-  }
-
-  .hero-below-slider-inner .slick-next {
-    right: -3px;
+    width: 18px;
+    height: 18px;
   }
 }
 
-/* =========================
-   ⚡ TRANSITIONS
-========================= */
-.transition-all {
-  transition: all 0.3s ease;
-}
-
-/* =========================
-   ⭐ TRUSTPILOT FIX
-========================= */
+/* trustpilot */
 .trustpilot-widget iframe {
   width: 100% !important;
   border: none !important;
-}
-
-/* =========================
-   📍 LOCATION LIST
-========================= */
-.location-listing-list ul li {
-  position: relative;
-  padding-left: 24px;
-}
-
-.location-listing-list ul li::before {
-  content: "";
-  background-image: url("https://travelforce.co.uk/wp-content/uploads/2025/06/loc.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  left: 0;
-  top: 6px;
 }
