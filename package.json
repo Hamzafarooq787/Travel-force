@@ -9,9 +9,16 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@types/react-datepicker": "^6.2.0",
+    "@types/react-slick": "^0.23.13",
     "next": "16.2.4",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-datepicker": "^9.1.0",
+    "react-dom": "19.2.4",
+    "react-google-places-autocomplete-next": "^1.0.1",
+    "react-phone-input-2": "^2.15.1",
+    "react-slick": "^0.31.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
