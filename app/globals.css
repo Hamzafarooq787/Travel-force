@@ -11,8 +11,9 @@
   }
 
   body {
-    @apply bg-gray-light text-gray-800 font-sans antialiased;
-  }
+  @apply bg-gray-light font-sans antialiased;
+  color: #1f2937;
+}
 
   h1 {
     @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-dark leading-tight;
