@@ -3,6 +3,22 @@
 @tailwind utilities;
 
 /* =========================
+   🌞 THEME COLORS (GLOBAL CSS)
+========================= */
+@theme {
+  --color-primary: #fcd34d;        /* soft yellow */
+  --color-primary-dark: #fbbf24;   /* darker yellow */
+  --color-secondary: #38bdf8;      /* sky blue */
+  --color-accent: #4ade80;         /* green */
+
+  --color-dark: #1f2937;
+  --color-gray-light: #f9fafb;
+  --color-gray: #e5e7eb;
+  --color-gray-dark: #6b7280;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+/* =========================
    🧱 BASE TYPOGRAPHY
 ========================= */
 @layer base {
