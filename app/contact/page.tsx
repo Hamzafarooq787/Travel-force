@@ -158,7 +158,7 @@ export default function ContactPage() {
                             <label className="block text-sm font-medium text-[#252525] mb-1">Journey Type</label>
                             <select
                               value={journeyType}
-                              onChange={(e) => setJourneyType(e.target.value as any)}
+                              onChange={(e) => setJourneyType(e.target.value as "return" | "oneway")}
                               className="w-full p-2 rounded border border-gray-300"
                             >
                               <option value="return">Return</option>

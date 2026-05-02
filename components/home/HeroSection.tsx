@@ -101,7 +101,9 @@ export default function HeroSection() {
                     <label className="block text-xs sm:text-sm font-medium mb-1">Hire Type</label>
                     <select
                       value={hireType}
-                      onChange={(e) => setHireType(e.target.value as "with-driver" | "self-drive")}
+                      onChange={(e) =>
+                        setHireType(e.target.value as "with-driver" | "self-drive")
+                      }
                       className="w-full p-2 text-sm rounded border"
                     >
                       <option value="with-driver">With Driver</option>
