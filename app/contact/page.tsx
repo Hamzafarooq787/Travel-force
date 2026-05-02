@@ -118,7 +118,7 @@ export default function ContactPage() {
                       <label className="block text-sm font-medium text-[#252525] mb-1">Hire Type</label>
                       <select
                         value={hireType}
-                        onChange={(e) => setHireType(e.target.value as any)}
+                        onChange={(e) => setHireType(e.target.value as "with-driver" | "self-drive")}
                         className="w-full p-2 rounded border border-gray-300 bg-white"
                       >
                         <option value="with-driver">Hire With Driver</option>
