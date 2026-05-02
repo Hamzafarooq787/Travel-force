@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* =========================
    🌞 THEME COLORS (GLOBAL CSS)
@@ -27,20 +25,45 @@
   }
 
   body {
-  @apply bg-gray-light font-sans antialiased;
-  color: #1f2937;
-}
+    @apply font-sans antialiased;
+    background-color: var(--color-gray-light);
+    color: #1f2937;
+  }
 
   h1 {
-    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-dark leading-tight;
+    @apply text-2xl font-bold leading-tight;
+    color: var(--color-dark);
+  }
+
+  @media (min-width: 640px) {
+    h1 { font-size: 1.875rem; line-height: 2.25rem; }
+  }
+  @media (min-width: 768px) {
+    h1 { font-size: 2.25rem; line-height: 2.5rem; }
+  }
+  @media (min-width: 1024px) {
+    h1 { font-size: 3rem; line-height: 1; }
   }
 
   h2 {
-    @apply text-xl sm:text-2xl md:text-3xl font-semibold text-dark;
+    @apply text-xl font-semibold;
+    color: var(--color-dark);
+  }
+
+  @media (min-width: 640px) {
+    h2 { font-size: 1.5rem; line-height: 2rem; }
+  }
+  @media (min-width: 768px) {
+    h2 { font-size: 1.875rem; line-height: 2.25rem; }
   }
 
   p {
-    @apply text-sm sm:text-base text-gray-dark leading-relaxed;
+    @apply text-sm leading-relaxed;
+    color: var(--color-gray-dark);
+  }
+
+  @media (min-width: 640px) {
+    p { font-size: 1rem; line-height: 1.5rem; }
   }
 }
 
@@ -48,13 +71,28 @@
    🎯 UI COMPONENTS
 ========================= */
 .btn-primary {
-  @apply bg-primary text-black px-4 py-2 sm:px-5 sm:py-2.5 rounded-lg font-medium 
-         hover:bg-primary-dark transition-all duration-300;
+  @apply text-black px-4 py-2 rounded-lg font-medium transition-all duration-300;
+  background-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+}
+
+@media (min-width: 640px) {
+  .btn-primary { padding-left: 1.25rem; padding-right: 1.25rem; padding-top: 0.625rem; padding-bottom: 0.625rem; }
 }
 
 .card {
-  @apply bg-white rounded-lg shadow-sm p-3 md:p-4 
-         hover:shadow-md transition-all duration-300;
+  @apply bg-white rounded-lg shadow-sm p-3 transition-all duration-300;
+}
+
+.card:hover {
+  @apply shadow-md;
+}
+
+@media (min-width: 768px) {
+  .card { padding: 1rem; }
 }
 
 /* =========================
