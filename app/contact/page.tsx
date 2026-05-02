@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function ContactPage() {
   // Form state (simplified – you can expand as needed)
-  const [hireType, setHireType] = useState<"with-driver" | "self-drive">("with-driver");
+  const [hireType, setHireType] = useState<"with-driver" | "self-drive">("with-driver"); // typed
   const [journeyType, setJourneyType] = useState<"return" | "oneway">("return");
   const [passengers, setPassengers] = useState("");
   const [departure, setDeparture] = useState("");
