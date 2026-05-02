@@ -10,7 +10,7 @@ const slides = [
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [hireType, setHireType] = useState<"with-driver" | "self-drive">("with-driver");
+  const [hireType, setHireType] = useState<"with-driver" | "self-drive">("with-driver"); // typed
   const [journeyType, setJourneyType] = useState<"return" | "oneway">("return");
   const [passengers, setPassengers] = useState("");
   const [departure, setDeparture] = useState("");
